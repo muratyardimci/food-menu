@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Food Menu</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
+  <body>
+
+    <section class = "menu">
+      <div class = "menu-container">
+        <div class = "menu-head">
+          <h2>Menü</h2>
+        </div>
+
+        <div class = "menu-btns">
+          <button type = "button" class = "menu-btn active-btn" id = "featured">Kahvaltı</button>
+          <button type = "button" class = "menu-btn" id = "today-special">Ana Yemek</button>
+          <button type = "button" class = "menu-btn" id = "new-arrival">İçecekler</button>
+        </div>
+
+        <div class = "food-items">
+          <!-- item -->
+          <div class = "food-item featured">
+            <div class = "food-img">
+              <img src = "foods/sucuk.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Sucuklu Yumurta</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">60 TL</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+              </ul>
+              <p class = "category">İçindekiler: <span>Yumurta, Sucuk, Kırmızı Biber, Karabiber</span></p>
+        
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item today-special">
+            <div class = "food-img">
+              <img src = "foods/danakaburga.jpeg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Dana Kaburga</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">240 TL</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+              </ul>
+              <p class = "category">Allerjen Maddeler: <span>Soya, Süt, Gluten, Hardal, Yumurta</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item new-arrival">
+            <div class = "food-img">
+              <img src = "foods/mocha.jpeg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Mocha</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">55 TL</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item featured">
+            <div class = "food-img">
+              <img src = "foods/omlett.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Omlet</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">50 TL</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+              </ul>
+              <p class = "category">İçindekiler: <span>Yumurta, Karabiber, Kırmızı biber</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item today-special">
+            <div class = "food-img">
+              <img src = "foods/bonfile.jpeg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Bonfile Lokum</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">210 TL</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+              </ul>
+              <p class = "category">Allerjen Maddeler: <span>Yumurta, Süt, Hardal</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item new-arrival">
+            <div class = "food-img">
+              <img src = "foods/whitemocha.jpeg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">White Mocha</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">65 TL</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end of item -->
+
+            <!-- item -->
+          <div class = "food-item new-arrival">
+            <div class = "food-img">
+              <img src = "foods/sicak.jpeg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Macchiato</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">60 TL</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end of item -->
+          
+
+          <!-- item -->
+          <div class = "food-item featured">
+            <div class = "food-img">
+              <img src = "foods/gozleme-tarifi.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Peynirli Gözleme</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">25 TL</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+              </ul>
+              <p class = "category">İçindekiler: <span>Peynir, Maydanoz</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item today-special">
+            <div class = "food-img">
+              <img src = "foods/chicken-legs-with-tomatoes-peppers-and-oranges.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Tavuk Budu</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">150 TL</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+              </ul>
+              <p class = "category">Allerjen Maddeler: <span>Hardal, Yumurta</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item new-arrival">
+            <div class = "food-img">
+              <img src = "foods/latte.jpeg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Latte</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">50 TL</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item featured">
+            <div class = "food-img">
+              <img src = "foods/tost.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Karışık Tost</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">75 TL</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+              </ul>
+              <p class = "category">İçindekiler: <span>Sucuk, Kaşar Peyniri, Ekmek</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item today-special">
+            <div class = "food-img">
+              <img src = "foods/fried-rice-with-shrimps.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Karidesli Pilav</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">180 TL</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+              </ul>
+              <p class = "category">Allerjen Maddeler: <span>Yumurta</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item new-arrival">
+            <div class = "food-img">
+              <img src = "foods/cay.jpeg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Demleme Çay</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">17 TL</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item new-arrival">
+            <div class = "food-img">
+              <img src = "foods/bitki .jpeg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Bitki Çayı</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">40 TL</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item new-arrival">
+            <div class = "food-img">
+              <img src = "foods/ormanmeyvelilimonata.jpeg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Orman Meyveli Limonata</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">50 TL</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end of item -->
+
+           <!-- item -->
+          <div class = "food-item new-arrival">
+            <div class = "food-img">
+              <img src = "foods/naneli.jpeg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Naneli Limonata</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">50 TL</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end of item -->
+
+           <!-- item -->
+          <div class = "food-item new-arrival">
+            <div class = "food-img">
+              <img src = "foods/orman.jpeg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Orman Meyveli Ice Tea</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">50 TL</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item new-arrival">
+            <div class = "food-img">
+              <img src = "foods/portakal.jpeg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Taze Sıkılmış Portakal Suyu</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">50 TL</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item new-arrival">
+            <div class = "food-img">
+              <img src = "foods/elma.jpeg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Taze Sıkılmış Elma Suyu</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">50 TL</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item new-arrival">
+            <div class = "food-img">
+              <img src = "foods/limonata.jpeg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Limonata</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">50 TL</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item featured">
+            <div class = "food-img">
+              <img src = "foods/menemen.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Menemen</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">50 TL</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+              </ul>
+              <p class = "category">İçindekiler: <span>Yumurta, Domates, Yeşil Biber</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item today-special">
+            <div class = "food-img">
+              <img src = "foods/pizza-with-a-lot-of-cheese.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Kaşar Peynirli Pizza</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">112 TL</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+              </ul>
+              <p class = "category">Allerjen Maddeler: <span>Gluten, Yumurta, Hardal</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item featured">
+            <div class = "food-img">
+              <img src = "foods/asd.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Noodles</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">85 TL</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+              </ul>
+              <p class = "category">İçindekiler: <span>Noodle, Yumurta, Biber</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item today-special">
+            <div class = "food-img">
+              <img src = "foods/tiny-pickles-on-top-of-burger.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Hamburger</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">139 TL</h3>
+              <ul class = "rating">
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+              </ul>
+              <p class = "category">Allerjen Maddeler: <span>Yumurta, Gluten, Süt</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+        </div>
+      </div>
+    </section>
+
+    
+
+
+
+    
+    
+    <script src="script.js"></script>
+  </body>
+</html>
